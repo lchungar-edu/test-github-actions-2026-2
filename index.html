@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Belleza | Peluquería Moderna</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Studio<span>Belleza</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Reseñas</a>
+        <a href="#agenda">Agendar</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Peluquería premium</p>
+        <h1>Transformamos tu estilo con técnica, cuidado y elegancia.</h1>
+        <p>
+          Cortes, color, peinados y servicios a domicilio diseñados para que vivas una experiencia moderna y personalizada.
+        </p>
+        <div class="hero-actions">
+          <a href="#agenda" class="btn primary">Agendar cita</a>
+          <a href="#servicios" class="btn secondary">Ver servicios</a>
+        </div>
+      </div>
+
+      <div class="carousel" aria-label="Trabajos realizados">
+        <div class="carousel-track" id="carouselTrack">
+          <article class="slide active">
+            <div class="slide-image gradient-one"></div>
+            <div class="slide-info">
+              <h3>Balayage natural</h3>
+              <p>Color con acabado luminoso y suave.</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="slide-image gradient-two"></div>
+            <div class="slide-info">
+              <h3>Corte moderno</h3>
+              <p>Estilo personalizado según rostro y textura.</p>
+            </div>
+          </article>
+
+          <article class="slide">
+            <div class="slide-image gradient-three"></div>
+            <div class="slide-info">
+              <h3>Peinado social</h3>
+              <p>Look elegante para eventos especiales.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="prevSlide" aria-label="Trabajo anterior">‹</button>
+          <button id="nextSlide" aria-label="Trabajo siguiente">›</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">Nuestros servicios</p>
+        <h2>Todo lo que necesitas para renovar tu imagen.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>Corte y styling</h3>
+          <p>Cortes femeninos, masculinos y asesoría de imagen según tu estilo.</p>
+          <strong>Desde $25</strong>
+        </article>
+
+        <article class="service-card">
+          <span>02</span>
+          <h3>Coloración</h3>
+          <p>Tintes, balayage, mechas, matización y tratamientos de brillo.</p>
+          <strong>Desde $55</strong>
+        </article>
+
+        <article class="service-card">
+          <span>03</span>
+          <h3>Tratamientos capilares</h3>
+          <p>Hidratación profunda, reparación, nutrición y control de frizz.</p>
+          <strong>Desde $35</strong>
+        </article>
+
+        <article class="service-card highlighted">
+          <span>04</span>
+          <h3>Servicio a domicilio</h3>
+          <p>Llevamos la experiencia de salón a tu casa para cortes, peinados y eventos.</p>
+          <strong>Desde $45</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonios">
+      <div class="section-heading">
+        <p class="eyebrow">Testimonios</p>
+        <h2>Clientes que confiaron en nuestro trabajo.</h2>
+      </div>
+
+      <div class="testimonial-card" id="testimonialCard">
+        <p id="testimonialText"></p>
+        <div>
+          <h3 id="testimonialName"></h3>
+          <span id="testimonialService"></span>
+        </div>
+      </div>
+
+      <div class="testimonial-actions">
+        <button id="prevTestimonial">Anterior</button>
+        <button id="nextTestimonial">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="section booking" id="agenda">
+      <div class="booking-content">
+        <p class="eyebrow">Agendamiento</p>
+        <h2>Reserva tu próxima cita en segundos.</h2>
+        <p>
+          Selecciona un servicio, fecha y horario. Esta demo no guarda datos, solo simula la experiencia visual.
+        </p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label>
+          Nombre
+          <input type="text" id="bookingName" placeholder="Tu nombre" required />
+        </label>
+
+        <label>
+          Servicio
+          <select id="bookingService" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Corte y styling</option>
+            <option>Coloración</option>
+            <option>Tratamiento capilar</option>
+            <option>Servicio a domicilio</option>
+          </select>
+        </label>
+
+        <label>
+          Fecha
+          <input type="date" id="bookingDate" required />
+        </label>
+
+        <label>
+          Horario
+          <select id="bookingTime" required>
+            <option value="">Selecciona un horario</option>
+            <option>09:00 AM</option>
+            <option>11:00 AM</option>
+            <option>02:00 PM</option>
+            <option>04:00 PM</option>
+            <option>06:00 PM</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn primary">Confirmar cita</button>
+        <p class="form-message" id="bookingMessage"></p>
+      </form>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-heading">
+        <p class="eyebrow">Contacto</p>
+        <h2>Escríbenos para cotizaciones, eventos o dudas.</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <article>
+            <h3>Ubicación</h3>
+            <p>Av. Principal 123, Centro</p>
+          </article>
+
+          <article>
+            <h3>Horario</h3>
+            <p>Lunes a sábado: 9:00 AM - 7:00 PM</p>
+          </article>
+
+          <article>
+            <h3>Correo</h3>
+            <p>contacto@studiobelleza.com</p>
+          </article>
+        </div>
+
+        <form class="contact-form" action="mailto:contacto@studiobelleza.com" method="post" enctype="text/plain">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+
+          <label>
+            Correo
+            <input type="email" name="correo" placeholder="tu@email.com" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Enviar por correo</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Studio Belleza. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
