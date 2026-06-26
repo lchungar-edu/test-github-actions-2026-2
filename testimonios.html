@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reseñas | Studio Belleza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Studio<span>Belleza</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html" class="active">Reseñas</a>
+        <a href="agenda.html">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-hero centered">
+      <p class="eyebrow">Testimonios</p>
+      <h1>Clientes que confiaron en nuestro trabajo.</h1>
+      <p>Reseñas dinámicas para presentar la experiencia del salón de forma cercana y confiable.</p>
+    </section>
+
+    <section class="section testimonials">
+      <div class="testimonial-card" id="testimonialCard">
+        <p id="testimonialText"></p>
+        <div>
+          <h3 id="testimonialName"></h3>
+          <span id="testimonialService"></span>
+        </div>
+      </div>
+
+      <div class="testimonial-actions">
+        <button id="prevTestimonial">Anterior</button>
+        <button id="nextTestimonial">Siguiente</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 Studio Belleza. Todos los derechos reservados.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

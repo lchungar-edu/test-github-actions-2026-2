@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamiento | Studio Belleza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Studio<span>Belleza</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Reseñas</a>
+        <a href="agenda.html" class="active">Agendar</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section booking">
+      <div class="booking-content">
+        <p class="eyebrow">Agendamiento</p>
+        <h1>Reserva tu próxima cita en segundos.</h1>
+        <p>Selecciona un servicio, fecha y horario. Esta demo no guarda datos, solo simula la experiencia visual.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label>
+          Nombre
+          <input type="text" id="bookingName" placeholder="Tu nombre" required />
+        </label>
+        <label>
+          Servicio
+          <select id="bookingService" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Corte y styling</option>
+            <option>Coloración</option>
+            <option>Tratamiento capilar</option>
+            <option>Servicio a domicilio</option>
+          </select>
+        </label>
+        <label>
+          Fecha
+          <input type="date" id="bookingDate" required />
+        </label>
+        <label>
+          Horario
+          <select id="bookingTime" required>
+            <option value="">Selecciona un horario</option>
+            <option>09:00 AM</option>
+            <option>11:00 AM</option>
+            <option>02:00 PM</option>
+            <option>04:00 PM</option>
+            <option>06:00 PM</option>
+          </select>
+        </label>
+        <button type="submit" class="btn primary">Confirmar cita</button>
+        <p class="form-message" id="bookingMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 Studio Belleza. Todos los derechos reservados.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

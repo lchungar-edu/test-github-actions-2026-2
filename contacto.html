@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Studio Belleza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Studio<span>Belleza</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="testimonios.html">Reseñas</a>
+        <a href="agenda.html">Agendar</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section page-hero">
+      <p class="eyebrow">Contacto</p>
+      <h1>Escríbenos para cotizaciones, eventos o dudas.</h1>
+      <p>El formulario abre tu cliente de correo con la información lista para enviar.</p>
+    </section>
+
+    <section class="section contact">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <article>
+            <h3>Ubicación</h3>
+            <p>Av. Principal 123, Centro</p>
+          </article>
+          <article>
+            <h3>Horario</h3>
+            <p>Lunes a sábado: 9:00 AM - 7:00 PM</p>
+          </article>
+          <article>
+            <h3>Correo</h3>
+            <p>contacto@studiobelleza.com</p>
+          </article>
+        </div>
+
+        <form class="contact-form" action="mailto:contacto@studiobelleza.com" method="post" enctype="text/plain">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Correo
+            <input type="email" name="correo" placeholder="tu@email.com" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
+          </label>
+          <button type="submit" class="btn primary">Enviar por correo</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© 2026 Studio Belleza. Todos los derechos reservados.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
